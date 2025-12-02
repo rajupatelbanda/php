@@ -104,7 +104,7 @@
           // $a = "Hello World";
 
 
-          $fruits = ["apple", "banana", "cherries", "dates", "elderberry"];
+          // $fruits = ["apple", "banana", "cherries", "dates", "elderberry"];
           // echo count($fruits);
           // echo sizeof($fruits);
           // if (array_key_exists(2, $fruits)) {
@@ -113,7 +113,54 @@
           //           echo "The key does not exist in the array.";
           // }
 
-          array_push($fruits, "fig", "grape");
+          // array_push($fruits, "fig", "grape");
+          // // print_r($fruits);
+          // unset($fruits[1]);
           // print_r($fruits);
-          unset($fruits[1]);
-          print_r($fruits);
+
+
+          // sort($fruits);
+          // print_r($fruits);
+
+          //magic constants in PHP
+          // echo __LINE__;
+          // echo "<br/>";
+          // echo __FILE__;
+          // echo "<br/>";
+          // echo __DIR__;
+          // echo "<br/>";
+
+          // function test()
+          // {
+          //           echo __FUNCTION__;
+          // }
+          // test();
+
+          echo "<br/>";
+          //Super Globals in PHP
+          // echo $_SERVER['PHP_SELF'];
+          // echo "<br/>";
+          // echo 'Server Name:' . $_SERVER['SERVER_NAME'];
+          // echo "<br/>";
+          // echo 'HTTP Host:' . $_SERVER['HTTP_HOST'];
+          // echo "<br/>";
+          // echo 'User Agent:' . $_SERVER['HTTP_USER_AGENT'];
+          // echo "<br/>";
+          // echo 'Server Address:' . $_SERVER['SERVER_ADDR'];
+          // echo "<br/>";
+          // echo 'Request Method:' . $_SERVER['REQUEST_METHOD'];
+          // echo "<br/>";
+          // echo 'Script Name:' . $_SERVER['SCRIPT_NAME'];
+          // echo "<br/>";
+          // echo 'Query String:' . $_SERVER['QUERY_STRING'];
+
+
+          //session in PHP
+          session_start();
+          $_SESSION['username'] = 'Raju';
+          echo "Session variable 'username' is set to " . $_SESSION['username'];
+
+          echo " <a href='dashboard.php'>Dashboard</a>";
+          echo "<br/>";
+          echo " <a href='logout.php'>logout</a>";
+          ?>
