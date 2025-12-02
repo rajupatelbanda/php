@@ -101,8 +101,19 @@
           // }
 
 
-$a="Hello World";
+          // $a = "Hello World";
 
 
+          $fruits = ["apple", "banana", "cherries", "dates", "elderberry"];
+          // echo count($fruits);
+          // echo sizeof($fruits);
+          // if (array_key_exists(2, $fruits)) {
+          //           echo "The key exists in the array.";
+          // } else {
+          //           echo "The key does not exist in the array.";
+          // }
 
-
+          array_push($fruits, "fig", "grape");
+          // print_r($fruits);
+          unset($fruits[1]);
+          print_r($fruits);
